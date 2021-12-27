@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TCaP":[function(require,module,exports) {
 "use strict";var t=e(require("lodash.throttle"));function e(t){return t&&t.__esModule?t:{default:t}}const o={start:document.querySelector("[data-start]"),stop:document.querySelector("[data-stop]"),body:document.querySelector("body")};let r;function d(){o.start.disabled=!0,o.stop.disabled=!1,r=setInterval(a,1e3)}function n(){o.start.disabled=!1,o.stop.disabled=!0,s()}function a(){o.body.style.backgroundColor=l()}function s(){clearInterval(r)}function l(){return`#${Math.floor(16777215*Math.random()).toString(16)}`}o.stop.disabled=!0,o.start.addEventListener("click",d),o.stop.addEventListener("click",n);
 },{"lodash.throttle":"FNyO"}]},{},["TCaP"], null)
-//# sourceMappingURL=/goit-js-hw-09/01-color-switcher.6a323bfb.js.map
+//# sourceMappingURL=/goit-js-hw-09/01-color-switcher.1939de01.js.map
