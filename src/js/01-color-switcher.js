@@ -1,4 +1,3 @@
-
 import Throttle from 'lodash.throttle'
 
 const refs = {
