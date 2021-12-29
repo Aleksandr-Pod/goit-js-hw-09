@@ -24,6 +24,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
     onClose(selectedDates) {
+
         selectedDate = selectedDates[0].getTime();
         if (selectedDate <= Date.now()) {
             alert("Please choose a date in the future");
@@ -43,7 +44,6 @@ function startTimer() {
 
 function changeTimer() {
     const rangeTime = selectedDate - Date.now();
-    console.log(rangeTime);
     if (rangeTime < 1000) {
         finishTimer()
         return;
